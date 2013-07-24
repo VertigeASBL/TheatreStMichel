@@ -41,10 +41,18 @@ ul {
 #page {
     width: 1012px;
     border: none;
-    
+    margin-top: 0;
+    margin-bottom: 0;
+
     #entete {
         border: none;
         background: #FFF;
+        padding: 0;
+        margin: 0;
+        
+        .spip_logos {
+            margin-top: 35px;
+        }
 
         ul.menu_superieur {
             text-align: right;
@@ -107,7 +115,16 @@ ul {
             }
         }
         
+        ul.menu_principal {
+            text-align: right;
+            margin-top: 25px;
+            margin-bottom: 0;
+            text-transform: uppercase;
 
+            li {
+                display: inline;
+            }
+        }
     }
 
     #pied {
