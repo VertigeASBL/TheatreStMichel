@@ -1,0 +1,13 @@
+config/
+config/base/
+tmp/
+IMG/
+plugins/auto/
+local/
+.backup
+.svn*
+snv*
+.DS_Store
+.htaccess
+*.sublime-project
+*.sublime-workspace
