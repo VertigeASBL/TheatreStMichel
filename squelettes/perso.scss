@@ -55,6 +55,7 @@ ul {
         }
 
         .social {
+            float: right;
             li {
                 float: left;
                 a {
@@ -83,6 +84,24 @@ ul {
                     span {
                         display: table-cell;
                         vertical-align: middle;
+                    }
+                }
+
+                #formulaire_recherche {
+                    input.search {
+                        float: left;
+                        background: #f0f0f0;
+                        border: none;
+                        height: 42px;
+                        width: 248px;
+                    }
+                    input.submit {
+                        float: left;
+                        display: block;
+                        background: #f0f0f0 url(images/recheche.png) no-repeat center;
+                        border: none;
+                        height: 42px;
+                        width: 42px;
                     }
                 }
             }
