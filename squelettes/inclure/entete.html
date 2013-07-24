@@ -2,11 +2,13 @@
 <B_Menu_superieur>
 <ul class="menu_superieur">
 <BOUCLE_Menu_superieur(ARTICLES){id_rubrique = 2}>
-    <li><a href="#URL_ARTICLE">#TITRE</a> |</li>
+    [<li><a href="#URL_ARTICLE" title="[(#TITRE|entites_html)]">(#TITRE)</a> |</li>]
 </BOUCLE_Menu_superieur>
 </ul>
 </B_Menu_superieur>
 
+
+[(#REM) Formulaire de recherche et bouton des réseaux sociaux. ]
 <div class="social">
     <ul>
         [<li><a href="#" title="Facebook">(#CHEMIN{images/icone_facebook.png}|balise_img{Facebook, icone_facebook})</a></li>]
@@ -20,7 +22,16 @@
         <li class="form_rechercher">
             [(#FORMULAIRE_RECHERCHE)]
         </li>
-    </ul>
-
-    
+    </ul>    
 </div>
+
+<div class="clear"></div>
+
+[(#REM) Menu Principal du site. ]
+<B_menu_principal>
+<ul class="menu_principal">
+<BOUCLE_menu_principal(ARTICLES){id_rubrique = 3}>
+    [<li><a href="#URL_ARTICLE" title="[(#TITRE|entites_html)]">(#TITRE)</a></li>]
+</BOUCLE_menu_principal>
+</ul>
+</B_menu_principal>
