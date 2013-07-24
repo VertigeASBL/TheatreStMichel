@@ -33,12 +33,61 @@ body {
     background: #f4f3f0;
 }
 
+// Mise en page des ul de base
+ul {
+    list-style: none;
+}
+
 #page {
     width: 1012px;
     border: none;
     
     #entete {
         border: none;
+        background: #FFF;
+
+        ul.menu_superieur {
+            text-align: right;
+
+            li {
+                display: inline;
+            }
+        }
+
+        .social {
+            li {
+                float: left;
+                a {
+                    display: block;
+                    width: 42px;
+                    height: 42px;
+                    background: #8fbe44;
+                    
+                    &:hover {
+                        background: #739f2a;
+                    }
+                }
+
+                &.rechercher {
+                    background: #1b2112;
+                    height: 42px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    display: table;
+
+                    font-size: pem(10);
+                    color: #f5f5f4;
+                    font-family: titillium;
+                    text-transform: uppercase;
+                    
+                    span {
+                        display: table-cell;
+                    }
+                }
+            }
+        }
+        
+
     }
 
     #pied {

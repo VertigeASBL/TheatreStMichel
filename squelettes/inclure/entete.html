@@ -1,0 +1,26 @@
+[(#REM) Création du menu supérieur. ]
+<B_Menu_superieur>
+<ul class="menu_superieur">
+<BOUCLE_Menu_superieur(ARTICLES){id_rubrique = 2}>
+    <li><a href="#URL_ARTICLE">#TITRE</a> |</li>
+</BOUCLE_Menu_superieur>
+</ul>
+</B_Menu_superieur>
+
+<div class="social">
+    <ul>
+        [<li><a href="#" title="Facebook">(#CHEMIN{images/icone_facebook.png}|balise_img{Facebook, icone_facebook})</a></li>]
+        [<li><a href="#" title="Twitter">(#CHEMIN{images/icone_twitter.png}|balise_img{Twitter, icone_twitter})</a></li>]
+        [<li><a href="#" title="Google +">(#CHEMIN{images/icone_google.png}|balise_img{Google+, icone_google})</a></li>]
+        [<li><a href="#URL_PAGE{backend}" title="Flux RSS">(#CHEMIN{images/icone_rss.png}|balise_img{RSS, icone_rss})</a></li>]
+
+        <li class="rechercher">
+            <span><:recherche:></span>
+        </li>
+        <li class="form_rechercher">
+            [(#FORMULAIRE_RECHERCHE)]
+        </li>
+    </ul>
+
+    
+</div>
