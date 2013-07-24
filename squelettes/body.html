@@ -1,0 +1,20 @@
+<div id="page">
+    <header>
+        <div id="entete" class="rows">
+            <div class="large-4 columns">
+                [(#LOGO_SITE_SPIP)]
+            </div>
+
+        </div>
+    </header>
+    
+    <div id="conteneur">    
+        <div id="contenu">
+            <INCLURE{fond=contenu/#ENV{type},env}>
+        </div>
+    </div>
+
+    <div id="pied">
+        <INCLURE{fond=inclure/pied,env}>
+    </div>
+</div>
