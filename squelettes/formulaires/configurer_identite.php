@@ -18,7 +18,7 @@ function formulaires_configurer_identite_charger_dist(){
 	lire_metas();
 	
 	$valeurs = array();
-	foreach(array('nom_site','adresse_site','slogan_site','descriptif_site','email_webmaster', 'billeterie_telephone') as $k)
+	foreach(array('nom_site','adresse_site','slogan_site','descriptif_site','email_webmaster', 'billetterie_telephone', 'billetterie_email') as $k)
 		$valeurs[$k] = isset($GLOBALS['meta'][$k])?$GLOBALS['meta'][$k]:'';
 		
 	return $valeurs;
@@ -46,7 +46,7 @@ function formulaires_configurer_identite_traiter_dist(){
 	set_request('adresse_site',appliquer_adresse_site(_request('adresse_site')));
 
 	include_spip('inc/meta');
-	foreach(array('nom_site','slogan_site','descriptif_site','email_webmaster', 'billeterie_telephone') as $k)
+	foreach(array('nom_site','slogan_site','descriptif_site','email_webmaster', 'billetterie_telephone', 'billetterie_email') as $k)
 		ecrire_meta($k,_request($k));
 	
 	include_spip('inc/texte_mini');
