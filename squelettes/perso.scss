@@ -221,11 +221,27 @@ a:hover {
             &.columns {
                 padding-right: 0;
             }
-
+            
             .bloc_sidebar {
                 background: #FFF;
                 border-bottom: 1px solid $bordure_bloc;
-                height: 40px;
+                
+                .newsletter_image {
+                    background: url(images/newsletter_inscription.png) no-repeat center;
+                    width: 228px;
+                    height: 122px;
+                    text-align: center;
+
+                    h2 {
+                        font-family: titillium_bold;
+                        font-size: pem(24);
+                        color: $noir;
+                        text-transform: uppercase;
+                        
+                    }
+                }
+
+
             }
         }
     }
