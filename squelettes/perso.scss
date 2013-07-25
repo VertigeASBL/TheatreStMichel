@@ -11,7 +11,7 @@ $bordeau: #8f0f3c;
 $vert_clair: #8fbe44;
 $vert_fonce: #739f2a;
 $noir: #1b2112;
-
+$bordure_bloc: #dedede;
 
 // Font face
 @font-face {
@@ -63,6 +63,7 @@ a:hover {
         padding: 0;
         margin: 0;
         padding-bottom: 10px;
+        border-bottom: 1px solid $bordure_bloc;
 
         .spip_logos {
             margin-top: 35px;
@@ -182,19 +183,23 @@ a:hover {
         width: 100%;
         height: 42px;
         background: #FFF;
+        border-bottom: 1px solid $bordure_bloc;
         
         #hierarchie {
             display: table;
             
             .logo_ariane {
                 padding-left: 10px;
-                width: 62px;
+                width: 66px;
                 height: 42px;
                 display: table-cell;
                 vertical-align: middle;
+                
+                background: url(images/separateur_ariane.png) no-repeat right top;
             }
             
             .fil {
+                padding-left: 15px;
                 display: table-cell;
                 vertical-align: middle;
             }
