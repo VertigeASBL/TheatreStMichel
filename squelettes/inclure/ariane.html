@@ -1,0 +1,16 @@
+[(#REM) Fil d'Ariane ]
+<BOUCLE_ariane_article(ARTICLES){id_article}>
+<p id="hierarchie">
+    [(#CHEMIN{images/logo_ariane.png}|balise_img{logo_ariane, logo_ariane})]
+    
+    <span>
+        <a href="#URL_SITE_SPIP/"><:accueil_site:></a>
+
+        [(#REM) On exclu les rubriques menu du fil d'ariane. ]
+        <BOUCLE_ariane(HIERARCHIE){id_article} {id_rubrique !IN 2,3}>
+            &gt; <a href="#URL_RUBRIQUE">[(#TITRE|couper{80})]</a>
+        </BOUCLE_ariane>
+        [ &gt; <strong class="on">(#TITRE|couper{80})</strong>]
+    </span>
+</p>
+</BOUCLE_ariane_article>
