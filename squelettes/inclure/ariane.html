@@ -1,7 +1,9 @@
 [(#REM) Fil d'Ariane ]
 <BOUCLE_ariane_article(ARTICLES){id_article}>
 <div id="hierarchie">
-    [<div class="logo_ariane">(#CHEMIN{images/logo_ariane.png}|balise_img{logo_ariane,})</div>]
+    [<div class="logo_ariane">
+        <a href="#URL_SITE_SPIP" title="[(#NOM_SITE_SPIP|attribut_html)]">(#CHEMIN{images/logo_ariane.png}|balise_img{logo_ariane,})</a>
+    </div>]
     
     <div class="fil">
         <a href="#URL_SITE_SPIP/"><:accueil_site:></a>
