@@ -225,6 +225,11 @@ a:hover {
         #contenu-principal {
             background: #FFF;
             border-bottom: 1px solid $bordure_bloc;
+            
+            .chapo {
+                font-style: italic;
+                color: $bordeau;
+            }
         }
         
         #sidebar {
@@ -258,8 +263,6 @@ a:hover {
                         font-size: pem(21);
                     }
                 }
-
-
             }
         }
     }
