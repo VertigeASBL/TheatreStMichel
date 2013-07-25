@@ -183,16 +183,23 @@ a:hover {
         height: 42px;
         background: #FFF;
         
-        padding-left: 10px;
-        display: table;
-        
-        p {
-            display: table-cell;
-            vertical-align: middle;
-            span {
-                margin-top: 2px;
+        #hierarchie {
+            display: table;
+            
+            .logo_ariane {
+                padding-left: 10px;
+                width: 62px;
+                height: 42px;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            
+            .fil {
+                display: table-cell;
+                vertical-align: middle;
             }
         }
+        
     }
 
     #pied {
