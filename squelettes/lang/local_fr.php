@@ -8,6 +8,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     // C
     // D
     // E
+    'email_billetterie_info' => 'Contactez la billetterie par email.',
     // F
     // G
     // H

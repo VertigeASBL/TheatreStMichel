@@ -5,6 +5,13 @@
     @return #{$pxval / $base}em;
 }
 
+// Variable de couleur
+
+$bordeau: #8f0f3c;
+$vert_clair: #8fbe44;
+$vert_fonce: #739f2a;
+$noir: #1b2112;
+
 
 // Font face
 @font-face {
@@ -30,7 +37,7 @@
 }
 
 body {
-    background: #f4f3f0;
+    background: #f4f3f0 url(images/background_body.png);
 }
 
 // Mise en page des ul de base
@@ -38,6 +45,12 @@ ul {
     list-style: none;
 }
 
+// On vire le underline une bonne fois pour toute.
+a:hover {
+    text-decoration: none;
+}
+
+// La page en elle même.
 #page {
     width: 1012px;
     border: none;
@@ -65,8 +78,7 @@ ul {
                     color: #959595;
                     
                     &:hover {
-                        color: #8f0f3c;
-                        text-decoration: none;
+                        color: $bordeau;
                     }
                 }
             }
@@ -80,15 +92,15 @@ ul {
                     display: block;
                     width: 42px;
                     height: 42px;
-                    background: #8fbe44;
+                    background: $vert_clair;
                     
                     &:hover {
-                        background: #739f2a;
+                        background: $vert_fonce;
                     }
                 }
 
                 &.rechercher {
-                    background: #1b2112;
+                    background: $noir;
                     height: 42px;
                     padding-left: 16px;
                     padding-right: 16px;
@@ -136,16 +148,34 @@ ul {
                 margin-left: 35px;
 
                 a {
-                    color: #1b2112;
+                    color: $noir;
                     
                     &:hover {
-                        color: #8fbe44;
-                        text-decoration: none;
+                        color: $vert_clair;
                     }
                 }
             }
         }
     }
+    
+    #billetterie {
+        text-align: right;
+        p {
+            color: $bordeau;
+            
+            span {
+                color: $vert_clair;
+                
+                a {
+                    color: $vert_clair;
+                    &:hover {
+                        color: $vert_fonce;
+                    }
+                }
+            }
+        }
+    }
+
 
     #pied {
         border: none;
