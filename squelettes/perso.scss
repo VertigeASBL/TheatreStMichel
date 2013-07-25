@@ -248,8 +248,14 @@ a:hover {
                         font-family: titillium_bold;
                         font-size: pem(24);
                         color: $noir;
-                        text-transform: uppercase;
-                        
+                        // text-transform: uppercase;
+                        padding-top: 14px;
+                    }
+
+                    h3 {
+                        font-family: titillium_light;
+                        color: #FFF;
+                        font-size: pem(21);
                     }
                 }
 
