@@ -207,6 +207,29 @@ a:hover {
         
     }
 
+    #conteneur {
+        margin-top: 15px;
+        
+        #contenu-principal {
+            background: #FFF;
+            border-bottom: 1px solid $bordure_bloc;
+        }
+        
+        #sidebar {
+    
+            // On va virer le padding right sur ce bloc si. Cela permet un aligment parfait de la partie blanche.
+            &.columns {
+                padding-right: 0;
+            }
+
+            .bloc_sidebar {
+                background: #FFF;
+                border-bottom: 1px solid $bordure_bloc;
+                height: 40px;
+            }
+        }
+    }
+
     #pied {
         border: none;
     }

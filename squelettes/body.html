@@ -19,13 +19,21 @@
         <INCLURE{fond=inclure/ariane, env}>
     </div>
 
-    <div id="conteneur">    
-        <div id="contenu">
+    <div id="conteneur" class="rows">
+        <div id="contenu-principal" class="large-12 columns">
             <INCLURE{fond=contenu/#ENV{type},env}>
         </div>
-    </div>
 
-    <div id="pied">
-        <INCLURE{fond=inclure/pied,env}>
+        <div id="sidebar" class="large-4 columns">
+            <div class="bloc_sidebar">
+                
+            </div>
+        </div>
     </div>
+    
+    <footer>
+        <div id="pied">
+            <INCLURE{fond=inclure/pied,env}>
+        </div>
+    </footer>
 </div>
