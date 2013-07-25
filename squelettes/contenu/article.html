@@ -1,22 +1,25 @@
 <BOUCLE_contenu_article(ARTICLES){id_article}>
 <div class="contenu-principal">
-	<div class="cartouche">
-		[(#LOGO_ARTICLE||image_reduire{200,200})]
-		<h1 class="h1 #EDIT{titre}">#TITRE</h1>
-	</div>
-
-	<div class="surlignable">
-		[<div class="#EDIT{chapo} chapo">(#CHAPO|image_reduire{500,0})</div>]
-		[<div class="#EDIT{texte} texte">(#TEXTE|image_reduire{500,0})</div>]
-	</div>
+	
+    <h1 class="h1 #EDIT{titre}">#TITRE</h1>
+	
+	[<div class="#EDIT{chapo} chapo">(#CHAPO|image_reduire{729,0})</div>]
+	
+    [(#REM) C'est le logo d'article qui sert de bannière ]
+    [<div class="bordure_banniere">
+        (#LOGO_ARTICLE|image_passe_partout{693,166}|image_recadre{693,166,center})
+    </div>]
+    
+    [<div class="#EDIT{texte} texte">(#TEXTE|image_reduire{729,0})</div>]
+	
 
 	[<div class="ps">
 		<h2 class="h2"><:info_ps:></h2>
-		<div class="#EDIT{ps} surlignable">(#PS|image_reduire{500,0})</div>
+		<div class="#EDIT{ps} surlignable">(#PS|image_reduire{729,0})</div>
 	</div>]
 
-[(#REM) Gestion du portfolio et des documents ]
-[(#INCLURE{fond=inclure/documents}{id_article})]
+    [(#REM) Gestion du portfolio et des documents ]
+    [(#INCLURE{fond=inclure/documents}{id_article})]
 
 </div>
 
