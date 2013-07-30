@@ -3,6 +3,11 @@
         <h2><:newsletter:></h2>
         <h3><:inscription:></h3>
     </div>
+    
+    [(#REM) Boucle qui va cherche le texte de la newsletter ]
+    <BOUCLE_texte_newsletter(ARTICLES){id_article = 7}>
+        #TEXTE
+    </BOUCLE_texte_newsletter>
 
     #FORMULAIRE_NEWSLETTER_SUBSCRIBE
 </div>
