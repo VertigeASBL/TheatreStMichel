@@ -12,6 +12,8 @@ $vert_clair: #8fbe44;
 $vert_fonce: #739f2a;
 $noir: #1b2112;
 $bordure_bloc: #dedede;
+$gris: #f0f0f0;
+
 
 // Font face
 @font-face {
@@ -152,7 +154,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                 #formulaire_recherche {
                     input.search {
                         float: left;
-                        background: #f0f0f0;
+                        background: $gris;
                         border: none;
                         height: 42px;
                         width: 248px;
@@ -332,6 +334,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                 .formulaire_newsletter {
                     padding-left: 20px;
                     padding-right: 20px;
+                    
+                    input.text {
+                        width: 208px;
+                        height: 42px;
+                        background: $gris;
+                        border: none;
+                        font-family: titillium;
+                        font-size: pem(14);
+                        padding-left: 20px;
+                        color: #959595;
+                    }
                 }
             }
         }
