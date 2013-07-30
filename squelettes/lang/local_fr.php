@@ -23,11 +23,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     // P
     // Q
     // R
-    'recherche' => 'recherche'
+    'recherche' => 'recherche',
     // S
     // T
     // U
     // V
+    'votre_mail' => 'Votre adresse E-mail ...'
     // W
     // X
     // Y

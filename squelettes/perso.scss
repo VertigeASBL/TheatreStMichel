@@ -327,6 +327,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                     padding-right: 20px;
                     font-size: pem(12);
                 }
+                
+                // Mise en page du formulaire de la newsletter.
+                .formulaire_newsletter {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
             }
         }
     }
