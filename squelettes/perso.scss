@@ -42,7 +42,7 @@ $bordure_bloc: #dedede;
     src: url('fonts/titilliumweb-light-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/titilliumweb-light-webfont.woff') format('woff'),
          url('fonts/titilliumweb-light-webfont.ttf') format('truetype'),
-         url('fonts/titilliumweb-light-webfont.svg#titillium_weblight') format('svg');
+         url('fonts/titilliumweb-light-webfont: .svg transparent;itillium_weblight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -306,6 +306,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                     width: 228px;
                     height: 122px;
                     text-align: center;
+                    margin-bottom: 20px;
 
                     h2 {
                         font-family: titillium_bold;
@@ -324,6 +325,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                 p {
                     padding-left: 20px;
                     padding-right: 20px;
+                    font-size: pem(12);
                 }
             }
         }
