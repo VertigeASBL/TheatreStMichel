@@ -7,7 +7,9 @@
 	
     [(#REM) C'est le logo d'article qui sert de bannière ]
     [<div class="bordure_banniere">
-        (#LOGO_ARTICLE|image_passe_partout{693,166}|image_recadre{693,166,center})
+        <a [href="(#LOGO_ARTICLE|extraire_attribut{src})"] [title="(#TITRE|attribut_html)"] class="mediabox">
+            (#LOGO_ARTICLE|image_passe_partout{693,166}|image_recadre{693,166,center})
+        </a>
     </div>]
     
     [<div class="#EDIT{texte} texte">(#TEXTE|image_reduire{729,0})</div>]
@@ -24,6 +26,5 @@
 </div>
 
 [<div class="notes surlignable"><h2 class="h2 pas_surlignable"><:info_notes:></h2>(#NOTES)</div>]
-
 
 </BOUCLE_contenu_article>
