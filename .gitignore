@@ -2,7 +2,6 @@ config/
 config/base/
 tmp/
 IMG/
-plugins/auto/
 local/
 .backup
 .svn*
