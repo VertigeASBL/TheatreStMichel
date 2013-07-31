@@ -5,6 +5,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     // A
     // B
     'billetterie' => 'Billetterie',
+    'bouton_subscribe' => 'Inscription',
     // C
     // D
     // E
