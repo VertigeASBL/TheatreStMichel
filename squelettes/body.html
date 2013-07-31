@@ -30,8 +30,58 @@
     </div>
     
     <footer>
+        [(#REM) Le footer, c'est lien, son texte et sont logo. ]
+        <div id="footer" class="rows">
+            [(#CHEMIN{images/logo_footer.png}|balise_img{Logo_footer, logo_footer})]
+            <div class="large-3 columns">
+                <INCLURE{fond=inclure/pied_lien_1, env}>
+            </div>
+            
+            <div class="large-3 columns">
+                <INCLURE{fond=inclure/pied_lien_2, env}>
+            </div>
+            
+            <div class="large-3 columns">
+                <INCLURE{fond=inclure/pied_lien_3, env}>
+            </div>
+
+            <div class="large-1 columns">
+                [<a href="#" title="Facebook">
+                    (#CHEMIN{images/icone_facebook_noir.png}|balise_img{Facebook, facebook_noir})
+                </a>]
+            </div>
+
+            <div class="large-1 columns">
+                [<a href="#" title="Twitter">
+                    (#CHEMIN{images/icone_twitter_noir.png}|balise_img{Twitter, twitter_noir})
+                </a>]
+            </div>
+
+            <div class="large-1 columns">
+                [<a href="#" title="Google plus">
+                    (#CHEMIN{images/icone_google_noir.png}|balise_img{Google Plus, google_noir})
+                </a>]
+            </div>
+
+            <div class="large-4 columns">
+                <h3>Théâtre Saint-Michel</h3>
+                <p>Salle Culturelle Saint-Michel ASBL
+                    <br>Rue Père Eudore Devroye 2
+                    <br>1040 Bruxelles - Belgique</p>
+            </div>
+            <div class="clear"></div>
+        </div>
         <div id="pied">
-            <INCLURE{fond=inclure/pied,env}>
+            <p class="copyright">&copy; 2013 Théâtre Saint-Michel - Tous droits réservés</p>
+            <div class="rows">
+                <div class="large-4 columns">
+                    [(#CHEMIN{images/ticket_net.png}|balise_img{ticketnet, ticketnet})]
+                </div>
+                <div class="large-12 columns">
+                    [(#CHEMIN{images/cinna.png}|balise_img{Cinna, Cinna})]
+                </div>
+
+            </div>
         </div>
     </footer>
 </div>

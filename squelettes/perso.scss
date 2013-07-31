@@ -6,7 +6,6 @@
 }
 
 // Variable de couleur
-
 $bordeau: #8f0f3c;
 $vert_clair: #8fbe44;
 $vert_fonce: #739f2a;
@@ -14,6 +13,8 @@ $noir: #1b2112;
 $bordure_bloc: #dedede;
 $gris: #f0f0f0;
 
+// On sauvegarde le padding de foundation
+$padding: 0.9375em;
 
 // Font face
 @font-face {
@@ -350,7 +351,28 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         }
     }
 
+    footer {
+        div#footer {
+            margin-top: 30px;
+            background: #FFF;
+            border-bottom: 1px solid $bordure_bloc;
+            padding-top: 24px;
+            position: relative;
+            
+            .logo_footer {
+                position: absolute;
+                right: 0;
+                top: 96px;
+            }
+        }
+    }
     #pied {
+        text-align: left;
         border: none;
+        background: none;
+        
+        .copyright {
+            padding: $padding;
+        }
     }
 }
