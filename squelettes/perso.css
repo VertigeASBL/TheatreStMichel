@@ -1,0 +1,291 @@
+/* 
+ *  Fonction de converstion des px en em.
+ */
+@font-face {
+  font-family: 'titillium_bold';
+  src: url("fonts/titilliumweb-bold-webfont.eot");
+  src: url("fonts/titilliumweb-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titilliumweb-bold-webfont.woff") format("woff"), url("fonts/titilliumweb-bold-webfont.ttf") format("truetype"), url("fonts/titilliumweb-bold-webfont.svg#titillium_webbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'titillium';
+  src: url("fonts/titilliumweb-regular-webfont.eot");
+  src: url("fonts/titilliumweb-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titilliumweb-regular-webfont.woff") format("woff"), url("fonts/titilliumweb-regular-webfont.ttf") format("truetype"), url("fonts/titilliumweb-regular-webfont.svg#titillium_webregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'titillium_light';
+  src: url("fonts/titilliumweb-light-webfont.eot");
+  src: url("fonts/titilliumweb-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titilliumweb-light-webfont.woff") format("woff"), url("fonts/titilliumweb-light-webfont.ttf") format("truetype"), url("fonts/titilliumweb-light-webfont: .svg transparent;itillium_weblight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'titillium_light_italic';
+  src: url("fonts/titilliumweb-lightitalic-webfont.eot");
+  src: url("fonts/titilliumweb-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titilliumweb-lightitalic-webfont.woff") format("woff"), url("fonts/titilliumweb-lightitalic-webfont.ttf") format("truetype"), url("fonts/titilliumweb-lightitalic-webfont.svg#titillium_weblight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: #f4f3f0 url(images/background_body.png);
+  font-family: arial;
+  color: #717171; }
+
+ul {
+  list-style: none; }
+
+a:hover {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  line-height: normal;
+  font-weight: normal;
+  margin: 0; }
+
+#page {
+  width: 1012px;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0; }
+  #page #entete {
+    border: none;
+    background: #FFF;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dedede; }
+    #page #entete .spip_logos {
+      margin-top: 35px; }
+    #page #entete ul.menu_superieur {
+      text-align: right; }
+      #page #entete ul.menu_superieur li {
+        display: inline; }
+        #page #entete ul.menu_superieur li a {
+          color: #959595; }
+          #page #entete ul.menu_superieur li a:hover {
+            color: #8f0f3c; }
+    #page #entete .social {
+      float: right; }
+      #page #entete .social li {
+        float: left; }
+        #page #entete .social li a {
+          display: block;
+          width: 42px;
+          height: 42px;
+          background: #8fbe44; }
+          #page #entete .social li a:hover {
+            background: #739f2a; }
+        #page #entete .social li.rechercher {
+          background: #1b2112;
+          height: 42px;
+          padding-left: 16px;
+          padding-right: 16px;
+          display: table;
+          font-size: 0.625em;
+          color: #f5f5f4;
+          font-family: titillium;
+          text-transform: uppercase; }
+          #page #entete .social li.rechercher span {
+            display: table-cell;
+            vertical-align: middle; }
+        #page #entete .social li #formulaire_recherche input.search {
+          float: left;
+          background: #f0f0f0;
+          border: none;
+          height: 42px;
+          width: 248px; }
+        #page #entete .social li #formulaire_recherche input.submit {
+          float: left;
+          display: block;
+          background: #f0f0f0 url(images/recheche.png) no-repeat center;
+          border: none;
+          height: 42px;
+          width: 42px; }
+    #page #entete ul.menu_principal {
+      text-align: right;
+      margin-top: 25px;
+      margin-bottom: 0;
+      text-transform: uppercase; }
+      #page #entete ul.menu_principal li {
+        display: inline;
+        margin-left: 35px; }
+        #page #entete ul.menu_principal li a {
+          color: #1b2112; }
+          #page #entete ul.menu_principal li a:hover {
+            color: #8fbe44; }
+  #page #billetterie {
+    text-align: right;
+    margin-top: 15px; }
+    #page #billetterie p {
+      color: #8f0f3c; }
+      #page #billetterie p span {
+        color: #8fbe44; }
+        #page #billetterie p span a {
+          color: #8fbe44; }
+          #page #billetterie p span a:hover {
+            color: #739f2a; }
+  #page #ariane {
+    width: 100%;
+    height: 42px;
+    background: #FFF;
+    border-bottom: 1px solid #dedede; }
+    #page #ariane #hierarchie {
+      display: table; }
+      #page #ariane #hierarchie .logo_ariane {
+        padding-left: 10px;
+        width: 66px;
+        height: 42px;
+        display: table-cell;
+        vertical-align: middle;
+        background: url(images/separateur_ariane.png) no-repeat right top; }
+      #page #ariane #hierarchie .fil {
+        padding-left: 15px;
+        display: table-cell;
+        vertical-align: middle; }
+  #page #conteneur {
+    margin-top: 15px; }
+    #page #conteneur #contenu-principal {
+      background: #FFF;
+      border-bottom: 1px solid #dedede;
+      padding-top: 30px; }
+      #page #conteneur #contenu-principal h1, #page #conteneur #contenu-principal h2, #page #conteneur #contenu-principal h3, #page #conteneur #contenu-principal h4, #page #conteneur #contenu-principal h5, #page #conteneur #contenu-principal h6 {
+        font-family: titillium_bold; }
+      #page #conteneur #contenu-principal h1 {
+        font-size: 1.625em; }
+      #page #conteneur #contenu-principal h2 {
+        font-size: 1.25em; }
+      #page #conteneur #contenu-principal h3 {
+        font-size: 1em; }
+      #page #conteneur #contenu-principal a, #page #conteneur #contenu-principal a.spip_in, #page #conteneur #contenu-principal a.spip_out {
+        color: #8f0f3c;
+        text-decoration: underline; }
+      #page #conteneur #contenu-principal .chapo {
+        font-family: titillium_light_italic;
+        color: #8f0f3c; }
+        #page #conteneur #contenu-principal .chapo p {
+          line-height: 1.2;
+          font-size: 1.125em; }
+      #page #conteneur #contenu-principal p {
+        font-size: 0.75em; }
+      #page #conteneur #contenu-principal .bordure_banniere {
+        background: #edf4f1;
+        width: 703px;
+        padding: 5px; }
+      #page #conteneur #contenu-principal ul {
+        list-style: circle;
+        margin-left: 30px; }
+        #page #conteneur #contenu-principal ul li {
+          font-size: 0.75em; }
+      #page #conteneur #contenu-principal ol {
+        margin-left: 30px; }
+        #page #conteneur #contenu-principal ol li {
+          font-size: 0.75em; }
+    #page #conteneur #sidebar.columns {
+      padding-right: 0; }
+    #page #conteneur #sidebar .bloc_sidebar {
+      background: #FFF;
+      border-bottom: 1px solid #dedede; }
+      #page #conteneur #sidebar .bloc_sidebar .newsletter_image {
+        background: url(images/newsletter_inscription.png) no-repeat center;
+        width: 228px;
+        height: 122px;
+        text-align: center;
+        margin-bottom: 20px; }
+        #page #conteneur #sidebar .bloc_sidebar .newsletter_image h2 {
+          font-family: titillium_bold;
+          font-size: 1.5em;
+          color: #1b2112;
+          padding-top: 9px;
+          margin: 0; }
+        #page #conteneur #sidebar .bloc_sidebar .newsletter_image h3 {
+          font-family: titillium_light;
+          color: #FFF;
+          font-size: 1.3125em; }
+      #page #conteneur #sidebar .bloc_sidebar p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 0.75em; }
+      #page #conteneur #sidebar .bloc_sidebar .formulaire_spip ul li {
+        padding: 0; }
+      #page #conteneur #sidebar .bloc_sidebar .formulaire_newsletter {
+        padding-left: 20px;
+        padding-right: 20px; }
+        #page #conteneur #sidebar .bloc_sidebar .formulaire_newsletter input.text {
+          width: 208px;
+          height: 42px;
+          background: #f0f0f0;
+          border: none;
+          font-family: titillium;
+          font-size: 0.875em;
+          padding-left: 20px;
+          color: #959595; }
+        #page #conteneur #sidebar .bloc_sidebar .formulaire_newsletter p.bouton {
+          margin: 0;
+          padding: 0;
+          text-align: left; }
+        #page #conteneur #sidebar .bloc_sidebar .formulaire_newsletter input.submit {
+          background: #739f2a;
+          border: none;
+          box-shadow: none;
+          font-family: titillium_bold;
+          font-size: 0.875em;
+          text-transform: uppercase; }
+    #page #conteneur #sidebar .voir_aussi {
+      margin-top: 35px; }
+      #page #conteneur #sidebar .voir_aussi h2 {
+        color: #739f2a;
+        font-family: titillium_bold;
+        font-size: 1.5em;
+        border-bottom: 1px dotted #717171; }
+      #page #conteneur #sidebar .voir_aussi li {
+        line-height: 1.2; }
+        #page #conteneur #sidebar .voir_aussi li a {
+          color: #717171;
+          font-family: titillium;
+          font-size: 0.75em; }
+          #page #conteneur #sidebar .voir_aussi li a:hover {
+            color: #8f0f3c; }
+  #page footer div#footer {
+    margin-top: 30px;
+    background: #FFF;
+    border-bottom: 1px solid #dedede;
+    padding-top: 24px;
+    position: relative; }
+    #page footer div#footer .footer_lien h3 {
+      color: #8f0f3c;
+      font-size: 1.125em;
+      font-family: titillium_bold;
+      border-bottom: 1px dotted #717171;
+      width: auto;
+      display: inline; }
+    #page footer div#footer .footer_lien li {
+      line-height: 1.2; }
+      #page footer div#footer .footer_lien li a {
+        color: #717171;
+        font-family: titillium;
+        font-size: 0.75em; }
+        #page footer div#footer .footer_lien li a:hover {
+          color: #8f0f3c; }
+    #page footer div#footer .logo_footer {
+      position: absolute;
+      right: 0;
+      bottom: -58px; }
+    #page footer div#footer .adresse {
+      text-align: right; }
+      #page footer div#footer .adresse h3 {
+        font-size: 1.125em;
+        color: #8fbe44;
+        font-family: titillium_bold; }
+      #page footer div#footer .adresse p {
+        font-size: 0.75em; }
+  #page #pied {
+    text-align: left;
+    border: none;
+    background: none;
+    margin-top: 5px;
+    margin-bottom: 50px; }
+    #page #pied .copyright {
+      padding-left: 0.9375em; }
