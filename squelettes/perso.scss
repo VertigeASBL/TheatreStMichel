@@ -468,7 +468,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         text-align: left;
         border: none;
         background: none;
-        
+        margin-top: 5px;
+        margin-bottom: 50px;
         .copyright {
             padding-left: $padding;
         }
