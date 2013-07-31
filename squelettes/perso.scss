@@ -389,6 +389,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
                     }
                 }
             }
+            .voir_aussi {
+                h2 {
+                    color: $vert_fonce;
+                    font-family: titillium_bold;
+                    font-size: pem(24);
+                    border-bottom: 1px dotted $gris_fonce; 
+                }
+                li {
+                    line-height: 1.2;
+                    a {
+                        color: $gris_fonce;
+                        font-family: titillium;
+                        font-size: pem(12);
+                        
+                        &:hover {
+                            color: $bordeau;
+                        }
+                    }
+                }
+            }
         }
     }
 
