@@ -29,7 +29,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
     // T
     // U
     // V
-    'votre_mail' => 'Votre adresse E-mail ...'
+    'votre_mail' => 'Votre adresse E-mail ...',
+    'voir_aussi' => 'Voir aussi'
     // W
     // X
     // Y
