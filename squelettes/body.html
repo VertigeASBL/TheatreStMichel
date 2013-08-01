@@ -1,13 +1,12 @@
 <div id="page">
     <header>
-        <div id="entete" class="rows">
+        <div id="entete" class="row">
             <div class="large-5 columns">
                 [(#LOGO_SITE_SPIP|image_reduire{229,97})]
             </div>
             <div class="large-11 columns">
                 <INCLURE{fond=inclure/entete, env}>
             </div>
-            <div class="clear"></div>
         </div>
     </header>
     
@@ -19,7 +18,7 @@
         <INCLURE{fond=inclure/ariane, env}>
     </div>
 
-    <div id="conteneur" class="rows">
+    <div id="conteneur" class="row">
         <div id="contenu-principal" class="large-12 columns">
             <INCLURE{fond=contenu/#ENV{type},env}>
         </div>
@@ -31,7 +30,7 @@
     
     <footer>
         [(#REM) Le footer, c'est lien, son texte et sont logo. ]
-        <div id="footer" class="rows">
+        <div id="footer" class="row">
             [(#CHEMIN{images/logo_footer.png}|balise_img{Logo_footer, logo_footer})]
             <div class="footer_lien large-3 columns">
                 <INCLURE{fond=inclure/pied_lien_1, env}>
@@ -69,11 +68,10 @@
                     <br>Rue Père Eudore Devroye 2
                     <br>1040 Bruxelles - Belgique</p>
             </div>
-            <div class="clear"></div>
         </div>
         <div id="pied">
             <p class="copyright">&copy; 2013 Théâtre Saint-Michel - Tous droits réservés</p>
-            <div class="rows">
+            <div class="row">
                 <div class="large-4 columns">
                     [(#CHEMIN{images/ticket_net.png}|balise_img{ticketnet, ticketnet})]
                 </div>
@@ -82,7 +80,6 @@
                 </div>
 
             </div>
-            <div class="clear"></div>
         </div>
     </footer>
 </div>
